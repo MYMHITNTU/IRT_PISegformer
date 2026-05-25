@@ -16,9 +16,9 @@ The project focuses on subsurface delamination detection in reinforced concrete 
 ├── Model/                  # PI-SegFormer architecture
 ├── Prediction/             # Prediction and Grad-CAM visualization results
 ├── Weights/                # Pretrained model weights
+├── Requirements.txt        # Required Python packages
 └── README.md
 ```
-
 ---
 
 # Instructions for Use
@@ -31,27 +31,39 @@ Clone this repository:
 git clone https://github.com/MYMHITNTU/IRT_PISegformer.git
 ```
 
----
-
-## 2. Download dataset
-
-For researchers interested in further studies based on this work, the complete dataset has been uploaded to Zenodo. Please contact me via email to obtain access permission, or wait until this work is officially published.
-
-Dataset download link:
-
-```text
-https://doi.org/10.5281/zenodo.20374793
-```
-
----
-
-## 3. Run the model
-
 Navigate to the project directory:
 
 ```bash
 cd IRT_PISegformer
 ```
+
+---
+
+## 2. Install dependencies
+
+Install the required packages using:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## 3. Download dataset and pretrained weights
+
+For researchers interested in further studies based on this work, the complete dataset and pretrained weights have been uploaded to Zenodo. Please contact me via email to obtain access permission, or wait until this work is officially published.
+
+Dataset download link:
+
+```text
+[Add your dataset download link here]
+```
+
+Place the downloaded dataset into the `Dataset/` folder and the pretrained weights into the `Weights/` folder.
+
+---
+
+## 4. Run the model
 
 Run the training script:
 
@@ -63,43 +75,21 @@ This will start the training process.
 
 ---
 
-## 4. Prediction and visualization
+## 5. Prediction and visualization
 
-Run the prediction script to evaluate the segmentation performance.
-
-Run the Grad-CAM script to visualize the region of interest (ROI) learned by the model.
-
----
-
-# Environment Configuration
-
-The code was tested under:
-
-```text
-Python 3.9
-CUDA 11.6
-```
-
-Required packages:
-
-```text
-torch==1.12.1
-torchvision==0.13.1
-transformers
-opencv-python
-numpy
-matplotlib
-scikit-learn
-scikit-image
-pandas
-json
-```
-
-Install dependencies using:
+Run the prediction script:
 
 ```bash
-pip install -r requirements.txt
+python predict.py
 ```
+
+Run the Grad-CAM visualization script:
+
+```bash
+python gradcam.py
+```
+
+This will generate prediction results and visualize the region of interest (ROI) learned by the model.
 
 ---
 
