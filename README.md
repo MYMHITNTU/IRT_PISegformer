@@ -4,111 +4,120 @@ This repository contains the official implementation for the paper:
 
 **“Thermal response analysis and physics-informed deep learning for active and passive infrared thermography-based delamination detection”**
 
-The project focuses on subsurface delamination detection in reinforced concrete structures using active/passive infrared thermography (IRT), physics-informed deep learning, explainable AI, and numerical simulation.
+The project focuses on subsurface delamination detection in reinforced concrete structures using active/passive infrared thermography (IRT), physics-informed deep learning, explainable AI, and thermal response analysis.
 
 ---
 
-
 # Project Structure
 
-```
+```text
 │
-├── Dataset/                # npz datasets
-├── Dataset_making/         # combine with Thermal data 
+├── Dataset/                # Example npz dataset (only one sample is provided due to file size limitations)
+├── Dataset_making/         # Thermal data processing and dataset generation
 ├── Model/                  # PI-SegFormer architecture
-├── Prediction/             # Prediction and GradCAM results
+├── Prediction/             # Prediction and Grad-CAM visualization results
 ├── Weights/                # Pretrained model weights
 └── README.md
-
 ```
 
 ---
 
 # Instructions for Use
 
-1. Download the code
+## 1. Download the code
 
 Clone this repository:
 
-git clone [https://github.com/YourGitHubName/PI-SegFormer-IRT.git](https://github.com/MYMHITNTU/IRT_PISegformer/edit/master/README.md)
-2. Download pretrained weights
+```bash
+git clone https://github.com/MYMHITNTU/IRT_PISegformer.git
+```
 
-Download the pretrained weights and place them into the Weights/ folder.
+---
 
-Weight download link:
+## 2. Download dataset
 
-[Add your download link here]
-3. Run the software
+For researchers interested in further studies based on this work, the complete dataset has been uploaded to Baidu Netdisk. Please contact me via email to obtain the access password.
+
+Dataset download link:
+
+```text
+[Add your dataset download link here]
+```
+
+---
+
+## 3. Run the model
 
 Navigate to the project directory:
 
-cd PI-SegFormer-IRT
+```bash
+cd IRT_PISegformer
+```
 
-Run:
+Run the training script:
 
-python software.py
+```bash
+python PI_SegFormer.py
+```
 
-This will open the software interface for IRT defect detection and visualization.
+This will start the training process.
 
-Dataset
+---
 
-The dataset includes:
+## 4. Prediction and visualization
 
-Active IRT thermal images
-Passive IRT thermal images
-Dry/wet condition datasets
-Delamination annotations
-Temperature matrix data
+Run the prediction script to evaluate the segmentation performance.
 
-For access to the complete dataset, please contact:
+Run the Grad-CAM script to visualize the region of interest (ROI) learned by the model.
 
-[Your Email]
+---
 
-Example datasets and sample files are provided for testing and training.
-
-Environment Configuration
+# Environment Configuration
 
 The code was tested under:
 
+```text
 Python 3.9
 CUDA 11.6
+```
 
 Required packages:
 
+```text
 torch==1.12.1
 torchvision==0.13.1
-mmcv==1.6.2
-timm==0.4.12
+transformers
 opencv-python
 numpy
 matplotlib
+scikit-learn
 scikit-image
 pandas
-Pillow
-tkinter
+json
+```
 
 Install dependencies using:
 
+```bash
 pip install -r requirements.txt
-Citation
+```
 
-If you find this work useful, please cite:
+---
 
-[Your paper citation here]
-Grad-CAM Visualization
+# Citation
 
-The repository includes Grad-CAM visualization tools for interpreting defect-related thermal attention regions in the PI-SegFormer model.
+If you find this work useful, please cite our paper. The citation information will be updated after publication.
 
-Numerical Simulation
+---
 
-COMSOL-based numerical simulations were conducted to investigate the three-dimensional thermal diffusion behavior associated with subsurface delamination defects under both active and passive heating conditions.
-
-License
+# License
 
 This project is released under the MIT License.
 
-Contact
+---
 
-Yiming Ma
-Nanyang Technological University (NTU)
-Email: [Your Email]
+# Contact
+
+Yiming Ma  
+Nanyang Technological University (NTU)  
+Email: yiming.ma@ntu.edu.sg
