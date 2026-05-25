@@ -49,17 +49,15 @@ pip install -r requirements.txt
 
 ---
 
-## 3. Download dataset and pretrained weights
+## 3. Download dataset
 
-For researchers interested in further studies based on this work, the complete dataset and pretrained weights have been uploaded to Zenodo. Please contact me via email to obtain access permission, or wait until this work is officially published.
+For researchers interested in further studies based on this work, the complete dataset has been uploaded to Zenodo. Please contact me via email to obtain access permission, or wait until this work is officially published.
 
 Dataset download link:
 
 ```text
-[Add your dataset download link here]
+https://zenodo.org/records/20374793
 ```
-
-Place the downloaded dataset into the `Dataset/` folder and the pretrained weights into the `Weights/` folder.
 
 ---
 
