@@ -21,8 +21,7 @@ The project focuses on subsurface delamination detection in reinforced concrete 
 ├── Utils/                  # Utility functions
 ├── software.py             # Main software interface
 └── README.md
-
----
+```
 
 # Instructions for Use
 1. Download the code
