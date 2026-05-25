@@ -11,7 +11,6 @@ The project focuses on subsurface delamination detection in reinforced concrete 
 # Project Structure
 
 ```text
-│
 ├── Dataset/                # Example npz dataset (only one sample is provided due to file size limitations)
 ├── Dataset_making/         # Thermal data processing and dataset generation
 ├── Model/                  # PI-SegFormer architecture
