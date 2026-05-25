@@ -8,17 +8,6 @@ The project focuses on subsurface delamination detection in reinforced concrete 
 
 ---
 
-# Features
-
-- Active and passive infrared thermography (IRT) analysis
-- Physics-Informed SegFormer (PI-SegFormer)
-- Delamination localization and segmentation
-- Dry/wet condition analysis
-- Thermal response evolution analysis
-- Grad-CAM visualization
-- Numerical simulation-assisted thermal analysis
-
----
 
 # Project Structure
 
@@ -32,7 +21,10 @@ The project focuses on subsurface delamination detection in reinforced concrete 
 ├── Utils/                  # Utility functions
 ├── software.py             # Main software interface
 └── README.md
-Instructions for Use
+
+---
+
+# Instructions for Use
 1. Download the code
 
 Clone this repository:
