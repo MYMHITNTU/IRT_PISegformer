@@ -35,7 +35,7 @@ git clone https://github.com/MYMHITNTU/IRT_PISegformer.git
 
 ## 2. Download dataset
 
-For researchers interested in further studies based on this work, the complete dataset has been uploaded to Zenodo. Please contact me via email to obtain the access password.
+For researchers interested in further studies based on this work, the complete dataset has been uploaded to Zenodo. Please contact me via email to obtain access permission, or wait until this work is officially published.
 
 Dataset download link:
 
