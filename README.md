@@ -66,7 +66,7 @@ https://zenodo.org/records/20374793
 Run the training script:
 
 ```bash
-python PI_SegFormer.py
+python Model/PI_SegFormer.py
 ```
 
 This will start the training process.
@@ -78,13 +78,13 @@ This will start the training process.
 Run the prediction script:
 
 ```bash
-python predict.py
+python Prediction/Predict.py
 ```
 
 Run the Grad-CAM visualization script:
 
 ```bash
-python gradcam.py
+python Prediction/GradCAM.py
 ```
 
 This will generate prediction results and visualize the region of interest (ROI) learned by the model.
