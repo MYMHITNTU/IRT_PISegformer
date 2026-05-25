@@ -13,14 +13,14 @@ The project focuses on subsurface delamination detection in reinforced concrete 
 
 ```
 │
-├── Dataset/                # Thermal image datasets
-├── Weights/                # Pretrained model weights
+├── Dataset/                # npz datasets
+├── Dataset_making/         # combine with Thermal data 
 ├── Model/                  # PI-SegFormer architecture
-├── Prediction/             # Prediction and visualization results
-├── Simulation/             # Numerical simulation results
-├── Utils/                  # Utility functions
-├── software.py             # Main software interface
+├── Prediction/             # Prediction and GradCAM results
+├── Weights/                # Pretrained model weights
 └── README.md
+---
+
 ```
 
 # Instructions for Use
@@ -28,7 +28,7 @@ The project focuses on subsurface delamination detection in reinforced concrete 
 
 Clone this repository:
 
-git clone https://github.com/YourGitHubName/PI-SegFormer-IRT.git
+git clone [https://github.com/YourGitHubName/PI-SegFormer-IRT.git](https://github.com/MYMHITNTU/IRT_PISegformer/edit/master/README.md)
 2. Download pretrained weights
 
 Download the pretrained weights and place them into the Weights/ folder.
